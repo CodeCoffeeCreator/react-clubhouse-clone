@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../style/welcome.module.css';
 
 export default function Welcome() {
@@ -18,6 +19,15 @@ export default function Welcome() {
           join!
         </p>
         <p>Denny, CodeCoffeeCreator & Clubhouse team</p>
+      </div>
+      <div className={style.actionBtn}>
+        <Link
+          exact='true'
+          to='/get_username'
+          className='primaryBtn d-flex align-items-center mb-3'>
+          Get your username {/* <img src="" alt="" /> */}
+        </Link>
+        <Link to=''>Have an invite text? Sign in</Link>
       </div>
     </div>
   );
