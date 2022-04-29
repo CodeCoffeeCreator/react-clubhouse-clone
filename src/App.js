@@ -1,7 +1,8 @@
 import './App.css';
+import Welcome from './pages/Welcome';
 
 function App() {
-  return <h2>Let's build the Clubhouse Clone 🚀</h2>;
+  return <Welcome />;
 }
 
 export default App;
